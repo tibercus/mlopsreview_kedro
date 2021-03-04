@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="victor@hea134.iki.rssi.ru:22" remoteFilesAllowedToDisappearOnAutoupload="false">
+    <serverData>
+      <paths name="hea134">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/mlopsreview_kedro" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="victor@hea134.iki.rssi.ru:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/victor/mlopsreview_kedro" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

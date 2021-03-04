@@ -1,0 +1,72 @@
+# Here you can define all your data sets by using simple YAML syntax.
+#
+# Documentation for this file format can be found in "The Data Catalog"
+# Link: https://kedro.readthedocs.io/en/stable/04_user_guide/04_data_catalog.html
+
+trainX_sample:
+  type: pickle.PickleDataSet
+  filepath: data/01_raw/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH.pkl
+
+trainX_ps:
+  type: simple_photo_z.extras.datasets.astropy_dataset.AstropyDataSet
+  filepath: data/01_raw/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH/part-00000.ps_fluxes.fits
+
+trainX_ls:
+  type: simple_photo_z.extras.datasets.astropy_dataset.AstropyDataSet
+  filepath: data/01_raw/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH/part-00000.ls_fluxes.fits
+
+trainX_sdss:
+  type: simple_photo_z.extras.datasets.astropy_dataset.AstropyDataSet
+  filepath: data/01_raw/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH/part-00000.sdss_fluxes.fits
+
+
+testS82X_sample:
+  type: pickle.PickleDataSet
+  filepath: data/01_raw/test-sdss_unwise-S82X-L19.pkl
+
+testS82X_ps:
+  type: simple_photo_z.extras.datasets.astropy_dataset.AstropyDataSet
+  filepath: data/01_raw/test-sdss_unwise-S82X-L19/part-00000.ps_fluxes.fits
+
+testS82X_ls:
+  type: simple_photo_z.extras.datasets.astropy_dataset.AstropyDataSet
+  filepath: data/01_raw/test-sdss_unwise-S82X-L19/part-00000.ls_fluxes.fits
+
+testS82X_sdss:
+  type: simple_photo_z.extras.datasets.astropy_dataset.AstropyDataSet
+  filepath: data/01_raw/test-sdss_unwise-S82X-L19/part-00000.sdss_fluxes.fits
+
+
+preprocessed_trainX_sample:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH.csv
+
+preprocessed_trainX_ls:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH-ls.csv
+
+preprocessed_trainX_ps:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH-ps.csv
+
+preprocessed_testS82X_sample:
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/test-sdss_unwise-S82X-L19.csv
+
+
+dataset_trainX:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH.csv
+
+dataset_testS82X:
+  type: pandas.CSVDataSet
+  filepath: data/03_primary/test-sdss_unwise-S82X-L19.csv
+
+
+features_trainX:
+  type: pandas.CSVDataSet
+  filepath: data/04_feature/trainX_QSO_GALAXY_STAR_gaiaSN5-sdss_unwise-wo_XXLN_S82X_LH.csv
+
+features_testS82X:
+  type: pandas.CSVDataSet
+  filepath: data/04_feature/test-sdss_unwise-S82X-L19.csv

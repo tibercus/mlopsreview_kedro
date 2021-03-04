@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="55d5341a-b8a9-4d0b-a6bf-35aaafef48f5" name="hea134">
+        <fileTransfer rootFolder="/home/victor" accessType="SFTP" host="hea134.iki.rssi.ru" port="22" sshConfigId="d5d1373d-3aaa-4e6d-8d52-30725f75f98c" sshConfig="victor@hea134.iki.rssi.ru:22">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
